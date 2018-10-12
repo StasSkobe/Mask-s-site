@@ -1,0 +1,230 @@
+body 
+ width: 100%
+ background: url(../img/stars.png) 50% 50%, url(../img/mars.png) 60% 0% no-repeat fixed
+ background-color: #00060c
+ color: white
+ 
+ 
+
+
+@media only screen and (max-width:1060px)
+    body
+        width: 100%
+        height: 100%
+        background-image: url(../img/background.png)
+        background-repeat: no-repeat
+
+header
+ padding-top: 33px
+ padding-bottom: 33px
+ background: rgba(0,0,0,0.2)
+ border-bottom: 1px solid rgba(255,255,255,0.1 )
+
+.logo-block
+
+
+.navbar
+  margin-left: 20%
+
+.col-xs-8r,
+.col-sm-8r,
+.col-md-8r,
+.col-lg-8r 
+    position: relative
+    min-height: 1px
+    padding-right: 15px
+    padding-left: 15px
+
+
+.col-xs-8r 
+    width: 12.5%
+    float: left
+
+
+@media (min-width: 768px) 
+    .col-sm-8r 
+        width: 12.5%
+        float: left
+    
+
+
+@media (min-width: 992px) 
+    .col-md-8r 
+        width: 12.5%
+        float: left
+    
+
+
+@media (min-width: 1200px) 
+    .col-lg-8r 
+        width: 12.5%
+        float: left
+
+
+a 
+    display: inline-block
+    color: #fff
+    line-height: 1
+    text-decoration: none
+    cursor: pointer
+    position: relative
+
+a:hover
+    color: #A9A9A9
+    text-decoration: none
+
+a:after 
+    background-color: #3d3d3d
+    display: block
+    content: ""
+    height: 2px
+    width: 0%
+    left: 50%
+    top: 150%
+    position: absolute
+    -webkit-transition: width .3s ease-in-out
+    -moz--transition: width .3s ease-in-out
+    transition: width .3s ease-in-out
+    -webkit-transform: translateX(-50%)
+    -moz-transform: translateX(-50%)
+    transform: translateX(-50%)
+
+a:hover:after,
+a:focus:after 
+    width: 100%
+    color: white
+
+                   
+    
+.title-container__text
+  margin: 0
+  background-image: -webkit-gradient(linear, right top, left top, from(#ff4700), color-stop(50%, #ff6b33), color-stop(80%,#fff))
+  background-image: -webkit-linear-gradient(right, #ff4700, #ff6b33 50%, #fff 80%)
+  background-image: -o-linear-gradient(right, #ff4700, #ff6b33 50%, #fff 80%)
+  background-image: linear-gradient(to left, #ff4700, #ff6b33 50%, #fff 80%)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  color: transparent
+  
+  
+.title-container__text--title
+    margin-top: 30px
+    font-size: 3.45em
+    font-weight: 700
+    text-transform: uppercase
+    -webkit-clip-path: circle(92% at 0 -125px)
+    clip-path: circle(95% at 0 -142px)
+    
+
+.title-container__text--subtitle
+    font-size: 1.5em
+
+.fly--btn
+   color: #A9A9A9  
+   margin-top: 12%
+   padding: 5px 20px
+   display: inline-block
+   background: linear-gradient(#fff,#fff) top right/10px 2px, linear-gradient(#fff,#fff) top right/2px 10px, linear-gradient(#fff,#fff) bottom left/10px 2px, linear-gradient(#fff,#fff) bottom left/2px 10px, linear-gradient(to right,transparent, #3263a3) top/100% 2px, linear-gradient(to left,transparent, #3263a3) bottom/100% 2px, linear-gradient(to bottom,transparent, #3263a3) left/2px 100%, linear-gradient(to top,transparent, #3263a3) right/2px 100%
+   background-repeat: no-repeat
+
+
+.info--block
+    text-align: right
+
+.bonus-block
+    width: 182px
+    height: 160px  
+    display: inline-grid 
+    margin: 5px 0 5px 5px
+    text-align: center
+    &:nth-child(1)
+        background-image: linear-gradient(315deg,rgba(255,255,255,0.05), transparent 50%)
+    &:nth-child(2)
+        background-image: linear-gradient(45deg,rgba(255,255,255,0.05), transparent 50%)
+    &:nth-child(3)
+        background-image: linear-gradient(225deg,rgba(255,255,255,0.05), transparent 50%)
+    &:nth-child(4)
+        background-image: linear-gradient(135deg,rgba(255,255,255,0.05), transparent 50%)
+
+.bonus-block:hover
+    cursor: pointer
+    position: relative
+    &:nth-child(1)
+     background-image: linear-gradient(315deg,rgba(255,255,255,0.1), transparent 50%)
+     &:before,
+     &:after
+      content: ""
+      position: absolute
+      bottom: -1px
+      right: -1px
+     &:before
+      top: -1px
+      width: 1px
+      background-image: linear-gradient(transparent, rgba(255,255,255,0.3)) 
+     &:after
+      left: -1px
+      height: 1px
+      background-image: linear-gradient(to left, rgba(255,255,255,0.3), transparent)
+    &:nth-child(2)
+     background-image: linear-gradient(45deg,rgba(255,255,255,0.1), transparent 50%)
+     &:before,
+     &:after
+      content: ""
+      position: absolute
+      bottom: -1px
+      left: -1px
+     &:before
+      top: -1px
+      width: 1px
+      background-image: linear-gradient(transparent, rgba(255,255,255,0.3)) 
+     &:after
+      right: -1px
+      height: 1px
+      background-image: linear-gradient(to right, rgba(255,255,255,0.3), transparent)
+    &:nth-child(3)
+     background-image: linear-gradient(225deg,rgba(255,255,255,0.1), transparent 50%)
+     &:before,
+     &:after
+      content: ""
+      position: absolute
+      top: -1px
+      right: -1px
+     &:before
+      bottom: -1px
+      width: 1px
+      background-image: linear-gradient(rgba(255,255,255,0.3), transparent) 
+     &:after
+      left: -1px
+      height: 1px
+      background-image: linear-gradient(to left, rgba(255,255,255,0.3), transparent)
+    &:nth-child(4)
+     background-image: linear-gradient(135deg,rgba(255,255,255,0.1), transparent 50%)
+     &:before,
+     &:after
+      content: ""
+      position: absolute
+      top: -1px
+      left: -1px
+     &:before
+      bottom: -1px
+      width: 1px
+      background-image: linear-gradient(rgba(255,255,255,0.3), transparent) 
+     &:after
+      right: -1px
+      height: 1px
+      background-image: linear-gradient(to right, rgba(255,255,255,0.3), transparent)       
+    
+     
+
+.main-content
+    margin-top: 70px
+    padding-bottom: 10%  
+
+.bonus-block
+    span
+        font-size: 50px
+        font-weight: 700    
+
+.bonus-block
+    p
+        padding-top: 7%        

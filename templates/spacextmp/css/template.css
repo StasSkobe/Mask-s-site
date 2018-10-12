@@ -1,0 +1,607 @@
+body {
+  width: 100%;
+  background: url(../img/stars.png) 50% 50%, url(../img/mars.png) 60% 0% no-repeat fixed;
+  background-color: #00060c;
+  color: white;
+}
+
+
+
+header {max-height: 100px;
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar {
+  margin-left: 20%;
+  padding-top: 35px;
+}
+
+.col-xs-8r,
+.col-sm-8r,
+.col-md-8r,
+.col-lg-8r {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-xs-8r {
+  width: 12.5%;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .col-sm-8r {
+    width: 12.5%;
+    float: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-8r {
+    width: 12.5%;
+    float: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-8r {
+    width: 12.5%;
+    float: left;
+  }
+}
+
+.logo-block {
+  background:
+    linear-gradient(#fff, #fff) top right/7px 1px,
+    linear-gradient(#fff, #fff) top right/1px 7px,
+    linear-gradient(#fff, #fff) top left/7px 1px,
+    linear-gradient(#fff, #fff) top left/1px 7px,
+    linear-gradient(#fff, #fff) bottom right/7px 1px,
+    linear-gradient(#fff, #fff) bottom right/1px 7px,
+    linear-gradient(#fff, #fff) bottom left/7px 1px,
+    linear-gradient(#fff, #fff) bottom left/1px 7px;
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 315px;
+  height: 98px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo-block img {
+  padding: 25px 0 20px 25px;
+}
+
+.navbar a {
+  display: inline-block;
+  color: #fff;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.navbar a:hover {
+  color: #A9A9A9;
+  text-decoration: none;
+}
+
+.navbar a:after {
+  background-color: #3d3d3d;
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0%;
+  left: 50%;
+  top: 150%;
+  position: absolute;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  -o-transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.navbar a:hover:after,
+.navbar a:focus:after {
+  width: 100%;
+  color: white;
+}
+
+.title-container__text {
+  margin: 0;
+  background-image: -webkit-gradient(linear, right top, left top, from(#ff4700), color-stop(50%, #ff6b33), color-stop(80%, #fff));
+  background-image: -webkit-linear-gradient(right, #ff4700, #ff6b33 50%, #fff 80%);
+  background-image: -o-linear-gradient(right, #ff4700, #ff6b33 50%, #fff 80%);
+  background-image: linear-gradient(to left, #ff4700, #ff6b33 50%, #fff 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.title-container__text--title {
+  margin-top: 30px;
+  font-size: 3.45em;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-clip-path: circle(92% at 0 -125px);
+  clip-path: circle(95% at 0 -142px);
+}
+
+.title-container__text--subtitle {
+  font-size: 1.5em;
+}
+
+.fly--btn {
+  color: #A9A9A9;
+  cursor: pointer;
+  margin-top: 12%;
+  padding: 5px 20px;
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) top right/10px 2px, -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) top right/2px 10px, -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) bottom left/10px 2px, -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) bottom left/2px 10px, -webkit-gradient(linear, left top, right top, from(transparent), to(#3263a3)) top/100% 2px, -webkit-gradient(linear, right top, left top, from(transparent), to(#3263a3)) bottom/100% 2px, -webkit-gradient(linear, left top, left bottom, from(transparent), to(#3263a3)) left/2px 100%, -webkit-gradient(linear, left bottom, left top, from(transparent), to(#3263a3)) right/2px 100%;
+  background: -webkit-linear-gradient(#fff, #fff) top right/10px 2px, -webkit-linear-gradient(#fff, #fff) top right/2px 10px, -webkit-linear-gradient(#fff, #fff) bottom left/10px 2px, -webkit-linear-gradient(#fff, #fff) bottom left/2px 10px, -webkit-linear-gradient(left, transparent, #3263a3) top/100% 2px, -webkit-linear-gradient(right, transparent, #3263a3) bottom/100% 2px, -webkit-linear-gradient(top, transparent, #3263a3) left/2px 100%, -webkit-linear-gradient(bottom, transparent, #3263a3) right/2px 100%;
+  background: -o-linear-gradient(#fff, #fff) top right/10px 2px, -o-linear-gradient(#fff, #fff) top right/2px 10px, -o-linear-gradient(#fff, #fff) bottom left/10px 2px, -o-linear-gradient(#fff, #fff) bottom left/2px 10px, -o-linear-gradient(left, transparent, #3263a3) top/100% 2px, -o-linear-gradient(right, transparent, #3263a3) bottom/100% 2px, -o-linear-gradient(top, transparent, #3263a3) left/2px 100%, -o-linear-gradient(bottom, transparent, #3263a3) right/2px 100%;
+  background:
+    linear-gradient(#fff, #fff) top right/7px 1px,
+    linear-gradient(#fff, #fff) top right/1px 7px,
+    linear-gradient(#fff, #fff) bottom left/7px 1px,
+    linear-gradient(#fff, #fff) bottom left/1px 7px,
+    linear-gradient(to right, transparent, #3263a3) top/100% 1px,
+    linear-gradient(to left, transparent, #3263a3) bottom/100% 1px,
+    linear-gradient(to bottom, transparent, #3263a3) left/1px 100%,
+    linear-gradient(to top, transparent, #3263a3) right/1px 100%;
+  background-repeat: no-repeat;
+}
+
+.fly--btn:hover {
+  color: white;
+  text-decoration: none;
+}
+
+svg {
+  position: absolute;
+  top: 62%;
+  left: 28%;
+}
+
+.info--block {
+  text-align: right;
+}
+
+.bonus-block {
+  width: 182px;
+  height: 160px;
+  display: inline-grid;
+  margin: 5px 0 5px 5px;
+  text-align: center;
+}
+
+.bonus-block:nth-child(1) {
+  background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.05), transparent 50%);
+  background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.05), transparent 50%);
+  background-image: linear-gradient(315deg, rgba(255, 255, 255, 0.05), transparent 50%);
+}
+
+.bonus-block:nth-child(2) {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.05), transparent 50%);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.05), transparent 50%);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.05), transparent 50%);
+}
+
+.bonus-block:nth-child(3) {
+  background-image: -webkit-linear-gradient(225deg, rgba(255, 255, 255, 0.05), transparent 50%);
+  background-image: -o-linear-gradient(225deg, rgba(255, 255, 255, 0.05), transparent 50%);
+  background-image: linear-gradient(225deg, rgba(255, 255, 255, 0.05), transparent 50%);
+}
+
+.bonus-block:nth-child(4) {
+  background-image: -webkit-linear-gradient(315deg, rgba(255, 255, 255, 0.05), transparent 50%);
+  background-image: -o-linear-gradient(315deg, rgba(255, 255, 255, 0.05), transparent 50%);
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.05), transparent 50%);
+}
+
+.bonus-block:hover {
+  cursor: pointer;
+  position: relative;
+}
+
+.bonus-block:hover:nth-child(1) {
+  background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent 50%);
+  background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent 50%);
+  background-image: linear-gradient(315deg, rgba(255, 255, 255, 0.1), transparent 50%);
+}
+
+.bonus-block:hover:nth-child(1):before,
+.bonus-block:hover:nth-child(1):after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+}
+
+.bonus-block:hover:nth-child(1):before {
+  top: -1px;
+  width: 1px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.3)));
+  background-image: -webkit-linear-gradient(transparent, rgba(255, 255, 255, 0.3));
+  background-image: -o-linear-gradient(transparent, rgba(255, 255, 255, 0.3));
+  background-image: linear-gradient(transparent, rgba(255, 255, 255, 0.3));
+}
+
+.bonus-block:hover:nth-child(1):after {
+  left: -1px;
+  height: 1px;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.3)), to(transparent));
+  background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 0.3), transparent);
+  background-image: -o-linear-gradient(right, rgba(255, 255, 255, 0.3), transparent);
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.3), transparent);
+}
+
+.bonus-block:hover:nth-child(2) {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1), transparent 50%);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.1), transparent 50%);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.1), transparent 50%);
+}
+
+.bonus-block:hover:nth-child(2):before,
+.bonus-block:hover:nth-child(2):after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+}
+
+.bonus-block:hover:nth-child(2):before {
+  top: -1px;
+  width: 1px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.3)));
+  background-image: -webkit-linear-gradient(transparent, rgba(255, 255, 255, 0.3));
+  background-image: -o-linear-gradient(transparent, rgba(255, 255, 255, 0.3));
+  background-image: linear-gradient(transparent, rgba(255, 255, 255, 0.3));
+}
+
+.bonus-block:hover:nth-child(2):after {
+  right: -1px;
+  height: 1px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.3)), to(transparent));
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.3), transparent);
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.3), transparent);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), transparent);
+}
+
+.bonus-block:hover:nth-child(3) {
+  background-image: -webkit-linear-gradient(225deg, rgba(255, 255, 255, 0.1), transparent 50%);
+  background-image: -o-linear-gradient(225deg, rgba(255, 255, 255, 0.1), transparent 50%);
+  background-image: linear-gradient(225deg, rgba(255, 255, 255, 0.1), transparent 50%);
+}
+
+.bonus-block:hover:nth-child(3):before,
+.bonus-block:hover:nth-child(3):after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+}
+
+.bonus-block:hover:nth-child(3):before {
+  bottom: -1px;
+  width: 1px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(transparent));
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.3), transparent);
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.3), transparent);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), transparent);
+}
+
+.bonus-block:hover:nth-child(3):after {
+  left: -1px;
+  height: 1px;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.3)), to(transparent));
+  background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 0.3), transparent);
+  background-image: -o-linear-gradient(right, rgba(255, 255, 255, 0.3), transparent);
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.3), transparent);
+}
+
+.bonus-block:hover:nth-child(4) {
+  background-image: -webkit-linear-gradient(315deg, rgba(255, 255, 255, 0.1), transparent 50%);
+  background-image: -o-linear-gradient(315deg, rgba(255, 255, 255, 0.1), transparent 50%);
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent 50%);
+}
+
+.bonus-block:hover:nth-child(4):before,
+.bonus-block:hover:nth-child(4):after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+}
+
+.bonus-block:hover:nth-child(4):before {
+  bottom: -1px;
+  width: 1px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(transparent));
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.3), transparent);
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.3), transparent);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), transparent);
+}
+
+.bonus-block:hover:nth-child(4):after {
+  right: -1px;
+  height: 1px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.3)), to(transparent));
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.3), transparent);
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.3), transparent);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), transparent);
+}
+
+.main-content {
+  margin-top: 70px;
+  padding-bottom: 10%;
+}
+
+.bonus-block span {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.bonus-block p {
+  padding-top: 7%;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  svg {
+    display: none;
+  }
+
+  .title-container__text--title {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+
+  .bonus-block {
+    width: 177px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body {
+    background: url(../img/stars.png) 50% 50%,
+      url(../img/mars.png) 55% 0% no-repeat fixed;
+  }
+
+  .main-content {
+    margin-top: 10%;
+    padding-bottom: 0;
+  }
+
+  svg {
+    display: none;
+  }
+
+  .title-container__text--title {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+
+  .title-container__text--title {
+
+    font-size: 3em;
+  }
+
+  .bonus-block {
+    width: 127px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body {
+    background: url(../img/stars.png) 50% 50%,
+      url(../img/mars.png) 55% 0% no-repeat fixed;
+  }
+
+  .main-content {
+    margin-top: 10%;
+    padding-bottom: 0;
+  }
+
+  svg {
+    display: none;
+  }
+
+  .title-container__text--title {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+
+  .title-container__text--title {
+
+    font-size: 2em;
+  }
+
+  .bonus-block {
+    width: 127px;
+  }
+
+  .col-sm-5 {
+    display: table;
+    margin-top: 10%;
+  }
+
+  .info--block {
+    display: flex;
+  }
+
+  .col-sm-7 {
+    left: 20%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body {
+    background: url(../img/stars.png) 50% 50%,
+      url(../img/mars.png) 54% 0% no-repeat fixed;
+  }
+
+  .main-content {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+
+  svg {
+    display: none;
+  }
+
+  .title-container__text--title {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+
+  .title-container__text--title {
+
+    font-size: 2em;
+  }
+
+  .bonus-block {
+    width: 127px;
+    height: 135px;
+  }
+
+  .col-sm-5 {
+    display: table;
+    margin-top: 1%;
+  }
+
+  .info--block {
+    text-align: center;
+  }
+
+  .col-sm-7 {
+    text-align: center;
+    left: 3%;
+  }
+
+  .fly--btn {
+    margin-top: 5%;
+  }
+}
+
+.burger-icon {
+  display: none;
+  margin-right: 0;
+  position: fixed;
+  right: 30px;
+  top: 30px;
+}
+
+.burger-icon span {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 3px;
+  border-radius: 3px;
+  background: #bebebe;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.burger-icon span:before,
+.burger-icon span:after {
+  position: absolute;
+  background: #bebebe;
+  content: '';
+  width: 30px;
+  height: 3px;
+  border-radius: 3px;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.burger-icon span:before {
+  top: -10px;
+}
+
+.burger-icon span:after {
+  top: 10px;
+}
+
+.burger-icon--active span {
+  background: transparent;
+}
+
+.burger-icon--active span:before {
+  -webkit-transform: rotate(45deg) translate(8px, 6px);
+  -ms-transform: rotate(45deg) translate(8px, 6px);
+  transform: rotate(45deg) translate(8px, 6px);
+}
+
+.burger-icon--active span:after {
+  -webkit-transform: rotate(-45deg) translate(8px, -6px);
+  -ms-transform: rotate(-45deg) translate(8px, -6px);
+  transform: rotate(-45deg) translate(8px, -6px);
+}
+
+@media only screen and (max-width: 1200px) {
+  .header {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .logo-container {
+    background-image: none;
+  }
+
+  .burger-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar--active {
+    display: block;
+    padding: 0;
+    max-width: 320px;
+    margin: 0 auto;
+
+  }
+
+  .navbar--active a {
+    margin-bottom: 25px;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .navbar a {
+    display: block;
+    float: none;
+  }
+
+  .header--open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 80px;
+    height: 100%;
+    min-height: 300px;
+    background-color: rgba(2, 13, 23, 0.95);
+  }
+}
